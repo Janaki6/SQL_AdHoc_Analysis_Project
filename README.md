@@ -251,9 +251,11 @@ FROM dim_product pp join fact_sales_monthly fs on
  pp.product_code = fs.product_code where
  fiscal_year = 2021 group by fs.product_code order by total_sold_quantity desc),
  cte2 as 
+ 
  (select *,
 rank () over (partition by division order by total_sold_quantity desc) as rank_order
 	from cte1)
+ 
  select * from cte2 where rank_order<=3;
 
 ![image](https://github.com/Janaki6/SQL_project/assets/168548897/709ec7d0-5cf5-47e1-90b5-8cec651d725b)
