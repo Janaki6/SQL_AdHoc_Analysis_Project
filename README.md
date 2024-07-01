@@ -46,15 +46,21 @@ In APAC region, Atliq Exclusive customer operates in 8 major countries they are 
 2. What is the percentage of unique product increase in 2021 vs. 2020? The final output contains these fields, unique_products_2020 unique_products_2021 percentage_chg
 
 WITH unique_products AS (
+
     SELECT
+    
         (SELECT COUNT (DISTINCT product_code) FROM fact_gross_price WHERE fiscal_year = 2020) AS unique_products_2020,
         (SELECT COUNT (DISTINCT product_code) FROM fact_gross_price WHERE fiscal_year = 2021) AS unique_products_2021
 )
+
 SELECT
+
     unique_products_2020,
     unique_products_2021,
     concat (ROUND (((unique_products_2021 - unique_products_2020) / unique_products_2020) * 100, 2), " %") AS percentage_chg
+    
 FROM
+
     unique_products; 
 
 ![image](https://github.com/Janaki6/SQL_project/assets/168548897/bc004e99-e420-4ac1-a51e-afb97aaba3c0)
