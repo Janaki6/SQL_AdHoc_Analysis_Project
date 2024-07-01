@@ -38,6 +38,7 @@ dim_customers, dim_product, fact_gross_price, fact_manufacturing_cost, fact_pre_
 ![image](https://github.com/Janaki6/SQL_project/assets/168548897/8bbc0387-5198-4908-903a-faa2a3615037)
 
 **Insights**: 
+
 In APAC region, Atliq Exclusive customer operates in 8 major countries they are India, Indonesia, Japan, Philiphines, South Korea, Australia, Newzealand and Bangladesh
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -61,6 +62,7 @@ FROM
 ![image](https://github.com/Janaki6/SQL_project/assets/168548897/a60c2e9e-6cbb-45d3-8e3c-00b8fc8e386f)
 
 **Insights**:
+
 with 36.33% increase in unique product, company is meeting strong position in market by addressing changing needs of the customer.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -74,6 +76,7 @@ SELECT segment, count (DISTINCT (product_code)) as product_count FROM dim_produc
 ![image](https://github.com/Janaki6/SQL_project/assets/168548897/7277bc90-543f-4a96-8e71-34adc8aefd2a)
 
 **Insights**: 
+
 Segments such as notebooks, accessories, and peripherals are showing significant manufacturing growth as compared to desktops, storage, and networking this could be due to greater demand or innovation in notebooks, accessories, and peripheral and less with others.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -99,6 +102,7 @@ Segments such as notebooks, accessories, and peripherals are showing significant
 
 
 **Insights**: 
+
 Company has introduced 34 new unique products in Accessories category while storage and networking category has lowest production growth. 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -116,16 +120,21 @@ where manufacturing_cost in (
 ![image](https://github.com/Janaki6/SQL_project/assets/168548897/2d019e71-3f6c-4737-a969-a86dfe96c360)
 
 $240.54
+
 A6120110206	
+
 Personal Desktop
 
 ![image](https://github.com/Janaki6/SQL_project/assets/168548897/da4c0cdc-8cf0-488c-96ca-994ccb159f62)
 
 $0.89 
+
 A2118150101
+
 Mouse
 
 **Insights**: 
+
 Among our products, Personal Desktop with product code: A6120110206 is having highest manufacturing cost: - 240.54 dollars, whereas Mouse with product code: A2118150101 is having the lowest production cost.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -145,6 +154,7 @@ select f.customer_code, c.customer, concat(round(avg(f.pre_invoice_discount_pct)
 ![image](https://github.com/Janaki6/SQL_project/assets/168548897/f40a58db-4499-4fc0-9765-8530d3d8f25c)
 
 **Insights**: 
+
 Top 5 customers have average of 30.21% discount percentage.
 Flipkart has received the highest pre invoice discount percent i.e., 30.83%.
 
@@ -167,6 +177,7 @@ select concat (MONTHNAME (date), "(", year(date), ")") as month, year(date) as c
  ![image](https://github.com/Janaki6/SQL_project/assets/168548897/b18eb75f-b932-4f7a-bacf-0e02bc9ec168)
 
 **Insights**:
+
 •	For Atliq Exclusive Store maximum sales were recorded in November- 2020 and lowest sales recorded in March-2020.
 •	Low sales from March to August because of COVID when stores were shut.
 •	Sales started improving from September-2020 onwards due to ease in lockdown restrictions and also due to festival season in India.
@@ -193,6 +204,7 @@ SELECT
 ![image](https://github.com/Janaki6/SQL_project/assets/168548897/84778900-4a59-47c8-a8e1-7eea9b0a92c2)
 
 **Insights**:
+
 Total sold quantity in Q3(March, April, and May) of fiscal year 2020 was less due to COVID. Sales increased in Q4 with increased in demand of computers, notebooks and accessories for online classes.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -217,6 +229,7 @@ from output order by percentage desc;
 ![image](https://github.com/Janaki6/SQL_project/assets/168548897/d758cc26-0dd7-44b3-8f69-e66c21885181)
 
 **Insights**: 
+
 Retailer channel brought most sales to the company with 73.22% contribution while Distributor contributes sales of 11.31% of total.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -238,15 +251,14 @@ rank () over (partition by division order by total_sold_quantity desc) as rank_o
 
 
 **Insights**: 
+
 The most popular products in N&S were pen drives, with about 700,000 sold. In P&A, the top products were mice, with around 400,000 sold. For PC, the top products were personal laptops, and about 17,000 of them were sold
 
 
 **Recommendations**:
+
 Maximize Online Discounts: Work with Flipkart, Viveks, Ezone, Croma, and Amazon for exclusive online deals.
-
 Boost March and September: Implement special offers to improve sales during these low months.
-
 Cost Reduction: Reduce manufacturing costs for the AQ HOME Allin1 Gen 2.
-
 Replicate Q1 Success: Analyze and replicate strategies that boosted first-quarter sales in 2020.
 
