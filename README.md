@@ -114,9 +114,11 @@ Company has introduced 34 new unique products in Accessories category while stor
 select p.product_code, p.product, concat("$ ",round(f.manufacturing_cost,2)) as manufacturing_cost
  from fact_manufacturing_cost f join dim_product p
     using (product_code) 
+    
 where manufacturing_cost in (
     (Select max(manufacturing_cost) from fact_manufacturing_cost),
     (Select min(manufacturing_cost) from fact_manufacturing_cost))
+    
  Order by manufacturing_cost desc;
 
 ![image](https://github.com/Janaki6/SQL_project/assets/168548897/2d019e71-3f6c-4737-a969-a86dfe96c360)
@@ -146,6 +148,7 @@ Among our products, Personal Desktop with product code: A6120110206 is having hi
 select f.customer_code, c.customer, concat(round(avg(f.pre_invoice_discount_pct)*100,2), "%") as average_discount_percentage 
  from fact_pre_invoice_deductions f join dim_customer c 
  using(customer_code)
+ 
  where f.fiscal_year = 2021 and c.market = "India"
  group by c.customer_code, c.customer
  order by 
@@ -166,12 +169,14 @@ Flipkart has received the highest pre invoice discount percent i.e., 30.83%.
    
 select concat (MONTHNAME (date), "(", year(date), ")") as month, year(date) as calendar_year, 
  round (sum (gross_price * sold_quantity)/1000000,2) as Gross_sales_amount_mln 
+ 
  from  
  fact_gross_price gp join fact_sales_monthly fs
  on 
  gp.product_code = fs.product_code
  join dim_customer dc on 
  dc.customer_code = fs.customer_code
+ 
  where customer = "Atliq Exclusive" group by month, fs.fiscal_year order by fs.fiscal_year;
 
  ![image](https://github.com/Janaki6/SQL_project/assets/168548897/29d21546-9900-4398-9dc1-4a0b390f04f9)
@@ -195,6 +200,7 @@ SELECT
  when MONTH (date) IN (3,4,5) then "Q3"
  else "Q4"
  end as fiscal_quarter, 
+ 
  sum(sold_quantity)/1000000 as total_sold_quantity_mln
  from fact_sales_monthly 
  where fiscal_year = 2020
@@ -219,6 +225,7 @@ FROM fact_gross_price gp join fact_sales_monthly fs on
 gp.product_code = fs.product_code
 join dim_customer dc on
 fs.customer_code = dc.customer_code
+
 where fs.fiscal_year = 2021
 group by channel)
 
