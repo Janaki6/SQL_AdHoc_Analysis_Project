@@ -263,16 +263,16 @@ rank () over (partition by division order by total_sold_quantity desc) as rank_o
 
 **Key Insights**: 
 
-**Market Presence**: Atliq Exclusive operates in key APAC markets including Australia, Bangladesh, India, Japan, South Korea, Philippines, New Zealand, and Indonesia.
-**Product Growth**: There was a 36.32% increase in unique products in 2021 compared to 2020, with the accessories segment seeing the largest increase.
-**Sales Performance**: In fiscal year 2021, the retailer channel contributed the highest gross sales, while the distributor channel had the lowest.
+**Market Presence**: Atliq Exclusive operates in key APAC markets including Australia, Bangladesh, India, Japan, South Korea, Philippines, New Zealand, and Indonesia.\n
+**Product Growth**: There was a 36.32% increase in unique products in 2021 compared to 2020, with the accessories segment seeing the largest increase.\n
+**Sales Performance**: In fiscal year 2021, the retailer channel contributed the highest gross sales, while the distributor channel had the lowest.\n
 **Seasonal Trends**: The highest total sold quantity was in Quarter 1 of 2020 (September, October, November), with a significant drop in Quarter 3 (March, April, May) likely due to the COVID-19 pandemic.
 
 
 **Recommendations**:
 
-Maximize Online Discounts: Work with Flipkart, Viveks, Ezone, Croma, and Amazon for exclusive online deals.
-Boost March and September: Implement special offers to improve sales during these low months.
-Cost Reduction: Reduce manufacturing costs for the AQ HOME Allin1 Gen 2.
-Replicate Q1 Success: Analyze and replicate strategies that boosted first-quarter sales in 2020.
+Maximize Online Discounts: Work with Flipkart, Viveks, Ezone, Croma, and Amazon for exclusive online deals.\n
+Boost March and September: Implement special offers to improve sales during these low months.\n
+Cost Reduction: Reduce manufacturing costs for the AQ HOME Allin1 Gen 2.\n
+Replicate Q1 Success: Analyze and replicate strategies that boosted first-quarter sales in 2020.\n
 
