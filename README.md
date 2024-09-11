@@ -263,7 +263,7 @@ rank () over (partition by division order by total_sold_quantity desc) as rank_o
 
 **Key Insights**: 
 
-**Market Presence**: Atliq Exclusive operates in key APAC markets including Australia, Bangladesh, India, Japan, South Korea, Philippines, New Zealand, and Indonesia.\n
+**Market Presence**: Atliq Exclusive operates in key APAC markets including Australia, Bangladesh, India, Japan, South Korea, Philippines, New Zealand, and Indonesia./n
 **Product Growth**: There was a 36.32% increase in unique products in 2021 compared to 2020, with the accessories segment seeing the largest increase.\n
 **Sales Performance**: In fiscal year 2021, the retailer channel contributed the highest gross sales, while the distributor channel had the lowest.\n
 **Seasonal Trends**: The highest total sold quantity was in Quarter 1 of 2020 (September, October, November), with a significant drop in Quarter 3 (March, April, May) likely due to the COVID-19 pandemic.
