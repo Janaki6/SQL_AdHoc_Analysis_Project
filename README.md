@@ -261,9 +261,12 @@ rank () over (partition by division order by total_sold_quantity desc) as rank_o
 ![image](https://github.com/Janaki6/SQL_project/assets/168548897/709ec7d0-5cf5-47e1-90b5-8cec651d725b)
 
 
-**Insights**: 
+**Key Insights**: 
 
-The most popular products in N&S were pen drives, with about 700,000 sold. In P&A, the top products were mice, with around 400,000 sold. For PC, the top products were personal laptops, and about 17,000 of them were sold
+**Market Presence**: Atliq Exclusive operates in key APAC markets including Australia, Bangladesh, India, Japan, South Korea, Philippines, New Zealand, and Indonesia.
+**Product Growth**: There was a 36.32% increase in unique products in 2021 compared to 2020, with the accessories segment seeing the largest increase.
+**Sales Performance**: In fiscal year 2021, the retailer channel contributed the highest gross sales, while the distributor channel had the lowest.
+**Seasonal Trends**: The highest total sold quantity was in Quarter 1 of 2020 (September, October, November), with a significant drop in Quarter 3 (March, April, May) likely due to the COVID-19 pandemic.
 
 
 **Recommendations**:
