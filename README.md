@@ -275,11 +275,8 @@ rank () over (partition by division order by total_sold_quantity desc) as rank_o
 **Recommendations**:
 
 **Maximize Online Discounts**: Work with Flipkart, Viveks, Ezone, Croma, and Amazon for exclusive online deals.
-
 **Boost March and September**: Implement special offers to improve sales during these low months.
-
 **Cost Reduction**: Reduce manufacturing costs for the AQ HOME Allin1 Gen 2.
-
 **Replicate Q1 Success**: Analyze and replicate strategies that boosted first-quarter sales in 2020.
 
 
